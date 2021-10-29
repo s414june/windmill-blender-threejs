@@ -21,10 +21,10 @@ const scene = new THREE.Scene()
 
 //gltf
 const gltfLoader = new GLTFLoader();
-gltfLoader.load('windmill.gltf', (gltf) => {
-    scene.add(gltf.scene)
-    gltf.scene.scale.set(0.05, 0.05, 0.05);
-    gltf.scene.rotation.y = 2.55;
+gltfLoader.load('windmill.gltf', (gltf0) => {
+    scene.add(gltf0.scene)
+    gltf0.scene.scale.set(0.05, 0.05, 0.05);
+    gltf0.scene.rotation.y = 2.55;
 })
 
 const gltfLoaderLeaf = new GLTFLoader();
@@ -46,12 +46,12 @@ gltfLoaderLeaf.load('leaf.gltf', (gltf) => {
 
 
         // Render
-        renderer.render(scene, camera)
-
+        
         // Call tick again on the next frame
         window.requestAnimationFrame(tick)
+        renderer.render(scene, camera)
     }
-
+    
     tick()
 })
 
