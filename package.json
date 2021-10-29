@@ -1,6 +1,7 @@
 {
   "name": "windmill-blender-threejs",
   "license": "UNLICENSED",
+  "homepage": "https://s414june.github.io/windmill-blender-threejs/",
   "scripts": {
     "build": "webpack --config ./bundler/webpack.prod.js",
     "dev": "webpack serve --config ./bundler/webpack.dev.js",
